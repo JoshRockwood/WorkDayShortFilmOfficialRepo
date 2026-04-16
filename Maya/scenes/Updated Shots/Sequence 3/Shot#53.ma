@@ -132,6 +132,7 @@ createNode transform -n "Render_Camera";
 createNode camera -n "Render_CameraShape" -p "Render_Camera";
 	rename -uid "9C859822-4364-B38B-CA0D-E797EE0CD432";
 	setAttr -k off ".v";
+	setAttr ".rnd" no;
 	setAttr ".cap" -type "double2" 1.41732 0.94488 ;
 	setAttr ".ff" 0;
 	setAttr ".ovr" 1.3;
@@ -419,19 +420,7 @@ createNode reference -n "DragonGateCaveSetRN";
 		" -type \"double3\" 0 0 0"
 		2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Bones:bottom|DragonGateCaveSet:Bones:bottomShape" 
 		"orthographicWidth" " 0.96251847929250556"
-		2 "DragonGateCaveSet:Bones:standardSurface2SG" "aiCustomAOVs" " -s 2"
-		2 "DragonGateCaveSet:Bones:standardSurface2SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:Bones:standardSurface2SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		"DragonGateCaveSet:Stalagmite_1RN" 3
-		2 "DragonGateCaveSet:Stalagmite_1:standardSurface2SG" "aiCustomAOVs" " -s 2"
-		
-		2 "DragonGateCaveSet:Stalagmite_1:standardSurface2SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:Stalagmite_1:standardSurface2SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		"DragonGateCaveSet:DragonGateRN" 127
+		"DragonGateCaveSet:DragonGateRN" 1
 		0 "|DragonGateCaveSet:DragonGate:DragonGate" "|Background_grp" "-s -r "
 		"DragonGateCaveSet:Emergency_ButtonRN" 10
 		2 "DragonGateCaveSet:Emergency_Button:file1" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/EmergencyButton/Emergency_Button_Cover_Mat_BaseColor.1001.png\""
@@ -19105,111 +19094,6 @@ createNode reference -n "Knight_RetopoRN";
 		"Follow" " -k 1 1"
 		2 "|Knight_Retopo:Knight|Knight_Retopo:Controls|Knight_Retopo:Legs_ctrl_grp|Knight_Retopo:R_Leg_ctrl_grp|Knight_Retopo:R_Leg_IK_ctrl_grp|Knight_Retopo:R_Leg_IK_Main_ctrl_grp|Knight_Retopo:R_Leg_IK_ctrl_grp|Knight_Retopo:R_Leg_IK_ctrl" 
 		"Follow" " -k 1 1"
-		2 "Knight_Retopo:Skin_ZSphereSG" "aiCustomAOVs" " -s 2"
-		2 "Knight_Retopo:Skin_ZSphereSG" "aiCustomAOVs[0].aovName" " -type \"string\" \"albedo\""
-		
-		2 "Knight_Retopo:Skin_ZSphereSG" "aiCustomAOVs[1].aovName" " -type \"string\" \"Z\""
-		
-		2 "Knight_Retopo:Extract47SG" "aiCustomAOVs" " -s 2"
-		2 "Knight_Retopo:Extract47SG" "aiCustomAOVs[0].aovName" " -type \"string\" \"albedo\""
-		
-		2 "Knight_Retopo:Extract47SG" "aiCustomAOVs[1].aovName" " -type \"string\" \"Z\""
-		
-		2 "Knight_Retopo:Extract48SG" "aiCustomAOVs" " -s 2"
-		2 "Knight_Retopo:Extract48SG" "aiCustomAOVs[0].aovName" " -type \"string\" \"albedo\""
-		
-		2 "Knight_Retopo:Extract48SG" "aiCustomAOVs[1].aovName" " -type \"string\" \"Z\""
-		
-		2 "Knight_Retopo:Extract29_01SG" "aiCustomAOVs" " -s 2"
-		2 "Knight_Retopo:Extract29_01SG" "aiCustomAOVs[0].aovName" " -type \"string\" \"albedo\""
-		
-		2 "Knight_Retopo:Extract29_01SG" "aiCustomAOVs[1].aovName" " -type \"string\" \"Z\""
-		
-		2 "Knight_Retopo:Extract29SG" "aiCustomAOVs" " -s 2"
-		2 "Knight_Retopo:Extract29SG" "aiCustomAOVs[0].aovName" " -type \"string\" \"albedo\""
-		
-		2 "Knight_Retopo:Extract29SG" "aiCustomAOVs[1].aovName" " -type \"string\" \"Z\""
-		
-		2 "Knight_Retopo:Extract39SG" "aiCustomAOVs" " -s 2"
-		2 "Knight_Retopo:Extract39SG" "aiCustomAOVs[0].aovName" " -type \"string\" \"albedo\""
-		
-		2 "Knight_Retopo:Extract39SG" "aiCustomAOVs[1].aovName" " -type \"string\" \"Z\""
-		
-		2 "Knight_Retopo:Extract11SG" "aiCustomAOVs" " -s 2"
-		2 "Knight_Retopo:Extract11SG" "aiCustomAOVs[0].aovName" " -type \"string\" \"albedo\""
-		
-		2 "Knight_Retopo:Extract11SG" "aiCustomAOVs[1].aovName" " -type \"string\" \"Z\""
-		
-		2 "Knight_Retopo:Extract33SG" "aiCustomAOVs" " -s 2"
-		2 "Knight_Retopo:Extract33SG" "aiCustomAOVs[0].aovName" " -type \"string\" \"albedo\""
-		
-		2 "Knight_Retopo:Extract33SG" "aiCustomAOVs[1].aovName" " -type \"string\" \"Z\""
-		
-		2 "Knight_Retopo:Extract25SG" "aiCustomAOVs" " -s 2"
-		2 "Knight_Retopo:Extract25SG" "aiCustomAOVs[0].aovName" " -type \"string\" \"albedo\""
-		
-		2 "Knight_Retopo:Extract25SG" "aiCustomAOVs[1].aovName" " -type \"string\" \"Z\""
-		
-		2 "Knight_Retopo:Extract30SG" "aiCustomAOVs" " -s 2"
-		2 "Knight_Retopo:Extract30SG" "aiCustomAOVs[0].aovName" " -type \"string\" \"albedo\""
-		
-		2 "Knight_Retopo:Extract30SG" "aiCustomAOVs[1].aovName" " -type \"string\" \"Z\""
-		
-		2 "Knight_Retopo:Extract11_copy1SG" "aiCustomAOVs" " -s 2"
-		2 "Knight_Retopo:Extract11_copy1SG" "aiCustomAOVs[0].aovName" " -type \"string\" \"albedo\""
-		
-		2 "Knight_Retopo:Extract11_copy1SG" "aiCustomAOVs[1].aovName" " -type \"string\" \"Z\""
-		
-		2 "Knight_Retopo:PM3D_Plane3D1SG" "aiCustomAOVs" " -s 2"
-		2 "Knight_Retopo:PM3D_Plane3D1SG" "aiCustomAOVs[0].aovName" " -type \"string\" \"albedo\""
-		
-		2 "Knight_Retopo:PM3D_Plane3D1SG" "aiCustomAOVs[1].aovName" " -type \"string\" \"Z\""
-		
-		2 "Knight_Retopo:PM3D_Plane3D2SG" "aiCustomAOVs" " -s 2"
-		2 "Knight_Retopo:PM3D_Plane3D2SG" "aiCustomAOVs[0].aovName" " -type \"string\" \"albedo\""
-		
-		2 "Knight_Retopo:PM3D_Plane3D2SG" "aiCustomAOVs[1].aovName" " -type \"string\" \"Z\""
-		
-		2 "Knight_Retopo:PM3D_Sphere3D1SG" "aiCustomAOVs" " -s 2"
-		2 "Knight_Retopo:PM3D_Sphere3D1SG" "aiCustomAOVs[0].aovName" " -type \"string\" \"albedo\""
-		
-		2 "Knight_Retopo:PM3D_Sphere3D1SG" "aiCustomAOVs[1].aovName" " -type \"string\" \"Z\""
-		
-		2 "Knight_Retopo:Extract10SG" "aiCustomAOVs" " -s 2"
-		2 "Knight_Retopo:Extract10SG" "aiCustomAOVs[0].aovName" " -type \"string\" \"albedo\""
-		
-		2 "Knight_Retopo:Extract10SG" "aiCustomAOVs[1].aovName" " -type \"string\" \"Z\""
-		
-		2 "Knight_Retopo:PM3D_Sphere3D1_1SG" "aiCustomAOVs" " -s 2"
-		2 "Knight_Retopo:PM3D_Sphere3D1_1SG" "aiCustomAOVs[0].aovName" " -type \"string\" \"albedo\""
-		
-		2 "Knight_Retopo:PM3D_Sphere3D1_1SG" "aiCustomAOVs[1].aovName" " -type \"string\" \"Z\""
-		
-		2 "Knight_Retopo:PM3D_Sphere3D1_2SG" "aiCustomAOVs" " -s 2"
-		2 "Knight_Retopo:PM3D_Sphere3D1_2SG" "aiCustomAOVs[0].aovName" " -type \"string\" \"albedo\""
-		
-		2 "Knight_Retopo:PM3D_Sphere3D1_2SG" "aiCustomAOVs[1].aovName" " -type \"string\" \"Z\""
-		
-		2 "Knight_Retopo:Extract36SG" "aiCustomAOVs" " -s 2"
-		2 "Knight_Retopo:Extract36SG" "aiCustomAOVs[0].aovName" " -type \"string\" \"albedo\""
-		
-		2 "Knight_Retopo:Extract36SG" "aiCustomAOVs[1].aovName" " -type \"string\" \"Z\""
-		
-		2 "Knight_Retopo:Extract28SG" "aiCustomAOVs" " -s 2"
-		2 "Knight_Retopo:Extract28SG" "aiCustomAOVs[0].aovName" " -type \"string\" \"albedo\""
-		
-		2 "Knight_Retopo:Extract28SG" "aiCustomAOVs[1].aovName" " -type \"string\" \"Z\""
-		
-		2 "Knight_Retopo:Extract50SG" "aiCustomAOVs" " -s 2"
-		2 "Knight_Retopo:Extract50SG" "aiCustomAOVs[0].aovName" " -type \"string\" \"albedo\""
-		
-		2 "Knight_Retopo:Extract50SG" "aiCustomAOVs[1].aovName" " -type \"string\" \"Z\""
-		
-		2 "Knight_Retopo:standardSurface1SG" "aiCustomAOVs" " -s 2"
-		2 "Knight_Retopo:standardSurface1SG" "aiCustomAOVs[0].aovName" " -type \"string\" \"albedo\""
-		
-		2 "Knight_Retopo:standardSurface1SG" "aiCustomAOVs[1].aovName" " -type \"string\" \"Z\""
-		
 		2 "Knight_Retopo:Control_Layer" "visibility" " 0"
 		2 "Knight_Retopo:file1" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Knight Textures-20260331T144817Z-3-001/Knight Textures/Knight_SuperTemp_lambert1_BaseColor.1001.png\""
 		
@@ -20727,8 +20611,7 @@ createNode polyTweakUV -n "polyTweakUV1";
 		 0.23776524 -0.35310885 0.34570885 -0.31132099 0.45383719 -0.26866853 0.56213528 -0.22511157
 		 0.67060399 -0.18061179 0.77928215 -0.13515888 0.88814074 -0.088701271 0.99724674;
 select -ne :time1;
-	setAttr ".o" 22;
-	setAttr ".unw" 22;
+	setAttr ".o" 0;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
@@ -20756,32 +20639,17 @@ select -ne :standardSurface1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.40000000596046448;
 select -ne :initialShadingGroup;
-	addAttr -ci true -h true -sn "aal" -ln "attributeAliasList" -dt "attributeAlias";
 	setAttr -s 44 ".dsm";
 	setAttr ".ro" yes;
 	setAttr -s 15 ".gn";
 select -ne :initialParticleSE;
-	addAttr -ci true -h true -sn "aal" -ln "attributeAliasList" -dt "attributeAlias";
 	setAttr ".ro" yes;
-	setAttr -s 2 ".aovs";
-	setAttr ".aovs[0].aov_name" -type "string" "albedo";
-	setAttr ".aovs[1].aov_name" -type "string" "Z";
-	setAttr ".aal" -type "attributeAlias" 4 "ai_aov_albedo" "aiCustomAOVs[0].aovName" "ai_aov_Z" "aiCustomAOVs[1].aovName" ;
 select -ne :defaultRenderGlobals;
 	addAttr -ci true -h true -sn "dss" -ln "defaultSurfaceShader" -dt "string";
 	setAttr ".ren" -type "string" "arnold";
-	setAttr ".outf" 51;
-	setAttr ".imfkey" -type "string" "exr";
-	setAttr ".an" yes;
-	setAttr ".ef" 52;
-	setAttr ".pff" yes;
-	setAttr ".ifp" -type "string" "<Scene>/<RenderPass>/<Scene>_<RenderPass>";
 	setAttr ".dss" -type "string" "lambert1";
 select -ne :defaultResolution;
-	setAttr ".w" 1920;
-	setAttr ".h" 1080;
 	setAttr ".pa" 1;
-	setAttr ".dar" 1.7769999504089355;
 select -ne :defaultLightSet;
 	setAttr -s 12 ".dsm";
 select -ne :defaultColorMgtGlobals;
@@ -20797,7 +20665,7 @@ select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
 select -ne :ikSystem;
-	setAttr -s 4 ".sol";
+	setAttr -s 6 ".sol";
 connectAttr "Transform_Ctrl_Master_Scale.o" "SkeletonRN.phl[612]";
 connectAttr "Transform_Ctrl_Body_Poly.o" "SkeletonRN.phl[613]";
 connectAttr "Transform_Ctrl_translateX1.o" "SkeletonRN.phl[614]";
@@ -22525,8 +22393,6 @@ connectAttr ":defaultArnoldDisplayDriver.msg" ":defaultArnoldRenderOptions.drive
 		 -na;
 connectAttr ":defaultArnoldFilter.msg" ":defaultArnoldRenderOptions.filt";
 connectAttr ":defaultArnoldDriver.msg" ":defaultArnoldRenderOptions.drvr";
-connectAttr "aiAOV_albedo.msg" ":defaultArnoldRenderOptions.aovs" -na;
-connectAttr "aiAOV_Z.msg" ":defaultArnoldRenderOptions.aovs" -na;
 connectAttr "Transform_Ctrl_translateZ.o" "DragonGateCaveSetRN.phl[1]";
 connectAttr "Transform_Ctrl_translateX.o" "DragonGateCaveSetRN.phl[2]";
 connectAttr "Transform_Ctrl_translateY.o" "DragonGateCaveSetRN.phl[3]";
@@ -22576,7 +22442,6 @@ connectAttr "R_Arm_03_FK_Ctrl_rotateX.o" "DragonGateCaveSetRN.phl[46]";
 connectAttr "R_Arm_03_FK_Ctrl_rotateY.o" "DragonGateCaveSetRN.phl[47]";
 connectAttr "R_Arm_03_FK_Ctrl_rotateZ.o" "DragonGateCaveSetRN.phl[48]";
 connectAttr "_UNKNOWN_REF_NODE_.ur" "DragonGateCaveSetRN.ur";
-connectAttr "sharedReferenceNode.sr" "DragonGateCaveSetRN.sr";
 connectAttr "layerManager.dli[1]" "Background_Layer.id";
 connectAttr "_UNKNOWN_REF_NODE_.ur" "SkeletonRN.ur";
 connectAttr "aiTwoSided1.out" "aiStandardSurface1SG.ss";
